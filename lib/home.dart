@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'doctors_list.dart';
+import 'Ambulance.dart';
+import 'doctors_details.dart';
+import 'profile.dart';
+import 'disease_checker.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -52,7 +56,7 @@ class HomePage extends StatelessWidget {
                 buildTappableBox("Medicine", 'assets/img1.jpg', () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => DoctorList()),
+                    MaterialPageRoute(builder: (context) => DoctorDetails()),
                   );
                 }),
 
@@ -67,13 +71,13 @@ class HomePage extends StatelessWidget {
                 buildTappableBox("Health Checker", 'assets/img1.jpg', () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => DoctorList()),
+                    MaterialPageRoute(builder: (context) => DiseaseChecker()),
                   );
                 }),
                 buildTappableBox("Ambulance", 'assets/img1.jpg', () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => DoctorList()),
+                    MaterialPageRoute(builder: (context) => AmbulanceSection()),
                   );
                 }),
                 // buildBox("Health Checker", 'assets/img1.jpg'),
