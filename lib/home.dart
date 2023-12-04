@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'doctors_list.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -41,16 +42,42 @@ class HomePage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                buildBox("Doctor's Appointment", 'assets/img1.jpg'),
-                buildBox("Medicine", 'assets/img1.jpg'),
+                buildTappableBox("Doctor's Appointment", 'assets/img1.jpg', () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => DoctorList()),
+                  );
+                }),
+
+                buildTappableBox("Medicine", 'assets/img1.jpg', () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => DoctorList()),
+                  );
+                }),
+
+                // buildBox("Doctor's Appointment", 'assets/img1.jpg'),
+                // buildBox("Medicine", 'assets/img1.jpg'),
               ],
             ),
             SizedBox(height: 20.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                buildBox("Health Checker", 'assets/health_checker.png'),
-                buildBox("Ambulance", 'ambulance.png'),
+                buildTappableBox("Health Checker", 'assets/img1.jpg', () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => DoctorList()),
+                  );
+                }),
+                buildTappableBox("Ambulance", 'assets/img1.jpg', () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => DoctorList()),
+                  );
+                }),
+                // buildBox("Health Checker", 'assets/img1.jpg'),
+                // buildBox("Ambulance", 'assets/img1.jpg'),
               ],
             ),
           ],
@@ -80,6 +107,13 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+
+  Widget buildTappableBox(String text, String imagePath, VoidCallback onTap) {
+    return InkWell(
+      onTap: onTap,
+      child: buildBox(text, imagePath),
     );
   }
 
