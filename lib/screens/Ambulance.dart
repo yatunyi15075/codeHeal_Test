@@ -15,7 +15,7 @@ class _AmbulanceSectionState extends State<AmbulanceSection> {
 
   void _requestAmbulance() {
     //Simulating process of requesting an ambulance
-    //You will nedd to connect to the back-end service
+    //You will nedd to connect to the back-end service 
 
     //Simulate location trcking (replace this with actual)
     _trackUserLocation();
