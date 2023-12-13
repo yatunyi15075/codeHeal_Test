@@ -62,6 +62,7 @@ flutter:
   assets:
     - assets/
     - assets/img1.jpg
+    - assets/img2.png
     - assets/logo.png 
     - assets/ambulance.png
     - assets/doctor_icon2.png
