@@ -40,7 +40,7 @@ class DoctorList extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
