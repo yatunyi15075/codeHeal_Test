@@ -16,7 +16,7 @@ class _SplashState extends State<Splash> {
   }
 
   _navigatetohome() async {
-    await Future.delayed(Duration(milliseconds: 3000), () {});
+    await Future.delayed(Duration(milliseconds: 5000), () {});
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
@@ -35,7 +35,7 @@ class _SplashState extends State<Splash> {
       backgroundColor:
           customBackgroundColor, // Set your desired background color
       body: Center(
-        child: Image.asset('assets/logo.png', width: 300.0, height: 300.0),
+        child: Image.asset('assets/logo.png', width: 450.0, height: 450.0),
       ),
     );
   }

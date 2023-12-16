@@ -13,8 +13,27 @@ class _SignUpPageState extends State<SignUpPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       // appBar: AppBar(
-      //   title: Text('Sign UP'),
-      //   centerTitle: true,
+      //   Align(
+      //         alignment: Alignment.centerRight,
+      //         child: TextButton(
+      //           onPressed: () {
+      //             Navigator.push(
+      //                 context,
+      //                 MaterialPageRoute(
+      //                   builder: (context) => NavBarRoots(),
+      //                 ));
+      //           },
+      //           child: Text(
+      //             "SKIP",
+      //             style: TextStyle(
+      //               color: Color(0xFF7165D6),
+      //               fontSize: 20,
+      //             ),
+      //           ),
+      //         ),
+      //       ),
+      //   // title: Text('Skip'),
+      //   // centerTitle: true,
       // ),
       body: Padding(
         padding: EdgeInsets.all(20.0),

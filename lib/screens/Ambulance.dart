@@ -1,3 +1,4 @@
+import 'package:code/widgets/navbar_roots.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -15,7 +16,7 @@ class _AmbulanceSectionState extends State<AmbulanceSection> {
 
   void _requestAmbulance() {
     //Simulating process of requesting an ambulance
-    //You will nedd to connect to the back-end service 
+    //You will nedd to connect to the back-end service
 
     //Simulate location trcking (replace this with actual)
     _trackUserLocation();
@@ -87,6 +88,8 @@ class _AmbulanceSectionState extends State<AmbulanceSection> {
           ],
         ),
       ),
+      // bottom navigation
+      bottomNavigationBar: NavBarRoots(),
     );
   }
 }

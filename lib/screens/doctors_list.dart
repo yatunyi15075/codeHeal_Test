@@ -169,7 +169,7 @@ class DoctorList extends StatelessWidget {
                     margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
                     padding: EdgeInsets.symmetric(horizontal: 25),
                     decoration: BoxDecoration(
-                      color: Color(0xFFF4F6FA),
+                      color: Color.fromARGB(255, 231, 230, 229),
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: [
                         BoxShadow(
@@ -212,7 +212,7 @@ class DoctorList extends StatelessWidget {
               itemCount: 4,
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
-              itemBuilder: (coontext, index) {
+              itemBuilder: (context, index) {
                 return InkWell(
                   onTap: () {
                     Navigator.push(
@@ -223,7 +223,7 @@ class DoctorList extends StatelessWidget {
                     );
                   },
                   child: Container(
-                    margin: EdgeInsets.all(8),
+                    margin: EdgeInsets.all(10),
                     padding: EdgeInsets.symmetric(vertical: 5),
                     decoration: BoxDecoration(
                       color: Colors.white,

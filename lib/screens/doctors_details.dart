@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:code/widgets/navbar_roots.dart';
 
 class DoctorDetails extends StatelessWidget {
   const DoctorDetails({super.key});

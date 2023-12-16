@@ -1,8 +1,9 @@
+import 'package:code/widgets/navbar_roots.dart';
 import 'package:flutter/material.dart';
 import 'doctors_list.dart';
 import 'Ambulance.dart';
 import 'doctors_details.dart';
-import 'profile.dart';
+import 'settings.dart';
 import 'disease_checker.dart';
 
 class HomePage extends StatelessWidget {
@@ -87,30 +88,29 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.calendar_today),
-            label: 'Appointment',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.local_pharmacy),
-            label: 'Medicine',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.healing),
-            label: 'Health Checker',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
-          ),
-        ],
-      ),
+      bottomNavigationBar: NavBarRoots(),
+      // items: [
+      //   // BottomNavigationBarItem(
+      //   //   icon: Icon(Icons.calendar_today),
+      //   //   label: 'Appointment',
+      //   // ),
+      //   // BottomNavigationBarItem(
+      //   //   icon: Icon(Icons.local_pharmacy),
+      //   //   label: 'Medicine',
+      //   // ),
+      //   // BottomNavigationBarItem(
+      //   //   icon: Icon(Icons.home),
+      //   //   label: 'Home',
+      //   // ),
+      //   // BottomNavigationBarItem(
+      //   //   icon: Icon(Icons.healing),
+      //   //   label: 'Health Checker',
+      //   // ),
+      //   // BottomNavigationBarItem(
+      //   //   icon: Icon(Icons.person),
+      //   //   label: 'Profile',
+      //   ),
+      // ],
     );
   }
 

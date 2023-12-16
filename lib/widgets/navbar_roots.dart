@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:code/screens/home.dart';
-import 'package:code/screens/schedule_screen.dart';
-import 'package:code/screens/settings_screen.dart';
+import 'package:code/screens/appointment_screen.dart';
+import 'package:code/screens/settings.dart';
 import 'package:code/screens/messages_screen.dart';
 
 class NavBarRoots extends StatefulWidget {
@@ -16,13 +16,13 @@ class _NavBarRootsState extends State<NavBarRoots> {
   int _selectedIndex = 0;
   final _screens = [
     // //Home screen
-    // HomeScreen(),
+    HomePage(),
     // //msg screen
-    // MessagesScreen(),
-    // //schedule screen
-    // ScheduleScreen(),
+    MessagesScreen(),
+    // //schedule/Book Apointment screen
+    AppointmentScreen(),
     // //settings screen
-    // SettingsScreen(),
+    MyProfileScreen(),
   ];
 
   @override

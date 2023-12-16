@@ -12,7 +12,7 @@ class AppointmentScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF7165d6),
+      backgroundColor: Color.fromARGB(255, 58, 146, 218),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -55,7 +55,7 @@ class AppointmentScreen extends StatelessWidget {
                             children: [
                               CircleAvatar(
                                 radius: 35,
-                                backgroundImage: AssetImage("assets/1.jpg"),
+                                backgroundImage: AssetImage("assets/img1.jpg"),
                               ),
                               SizedBox(height: 15),
                               Text(
@@ -329,14 +329,14 @@ class AppointmentScreen extends StatelessWidget {
                 width: MediaQuery.of(context).size.width,
                 padding: EdgeInsets.symmetric(vertical: 12),
                 decoration: BoxDecoration(
-                  color: Color(0xFF7165D6),
+                  color: Colors.blue,
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Center(
                   child: Text(
                     "Book Appointment",
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.black,
                       fontSize: 18,
                       fontWeight: FontWeight.w500,
                     ),
