@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
-
 class AppointmentScreen extends StatelessWidget {
-  List imgs = [ 
+  List imgs = [
     "img1.jpg",
     "img1.jpg",
     "img1.jpg",
@@ -328,7 +327,7 @@ class AppointmentScreen extends StatelessWidget {
               onTap: () {},
               child: Container(
                 width: MediaQuery.of(context).size.width,
-                padding: EdgeInsets.symmetric(vertical: 18),
+                padding: EdgeInsets.symmetric(vertical: 12),
                 decoration: BoxDecoration(
                   color: Color(0xFF7165D6),
                   borderRadius: BorderRadius.circular(10),

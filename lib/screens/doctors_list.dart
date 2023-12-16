@@ -25,16 +25,16 @@ class DoctorList extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Hello Alex",
+                    "Hello BOY",
                     style: TextStyle(
-                      fontSize: 35,
+                      fontSize: 30,
                       fontWeight: FontWeight.w500,
                     ),
                   ),
                   CircleAvatar(
                     radius: 25,
                     backgroundImage: AssetImage(
-                      "img2.png",
+                      "assets/img2.png",
                     ),
                   ),
                 ],
@@ -49,7 +49,7 @@ class DoctorList extends StatelessWidget {
                   child: Container(
                     padding: EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                      color: Color(0xFF7165d6),
+                      color: Colors.blue,
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: [
                         BoxShadow(
@@ -70,7 +70,7 @@ class DoctorList extends StatelessWidget {
                           ),
                           child: Icon(
                             Icons.add,
-                            color: Color(0xFF7165D6),
+                            color: Colors.blue,
                             size: 35,
                           ),
                         ),
@@ -120,7 +120,7 @@ class DoctorList extends StatelessWidget {
                           ),
                           child: Icon(
                             Icons.home_filled,
-                            color: Color(0xFF7165D6),
+                            color: Colors.blue,
                             size: 35,
                           ),
                         ),
@@ -223,8 +223,8 @@ class DoctorList extends StatelessWidget {
                     );
                   },
                   child: Container(
-                    margin: EdgeInsets.all(10),
-                    padding: EdgeInsets.symmetric(vertical: 15),
+                    margin: EdgeInsets.all(8),
+                    padding: EdgeInsets.symmetric(vertical: 5),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10),
