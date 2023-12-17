@@ -1,4 +1,3 @@
-import 'package:code/widgets/navbar_roots.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -88,8 +87,6 @@ class _AmbulanceSectionState extends State<AmbulanceSection> {
           ],
         ),
       ),
-      // bottom navigation
-      bottomNavigationBar: NavBarRoots(),
     );
   }
 }

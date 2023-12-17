@@ -27,7 +27,7 @@ class DoctorList extends StatelessWidget {
                   Text(
                     "Hello BOY",
                     style: TextStyle(
-                      fontSize: 30,
+                      fontSize: 28,
                       fontWeight: FontWeight.w500,
                     ),
                   ),
@@ -150,7 +150,7 @@ class DoctorList extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(left: 15),
               child: Text(
-                "What are Your Symptoms? ",
+                "Choose Category? ",
                 style: TextStyle(
                   fontSize: 23,
                   fontWeight: FontWeight.w500,
@@ -158,6 +158,35 @@ class DoctorList extends StatelessWidget {
                 ),
               ),
             ),
+
+            //Category Section
+            Row(
+              children: [
+                Text("Category"),
+                Spacer(),
+                Text(
+                  "See all",
+                  style: TextStyle(
+                    color: Colors.blue,
+                  ),
+                ),
+                Icon(Icons.arrow_forward),
+              ],
+            ),
+            SizedBox(height: 10.0),
+
+            //Boxes with mother, baby, checkup, eye, tooth imgs/section
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                buildCircularBox('assets/img1.jpg', 'Mother'),
+                buildCircularBox('assets/img1.jpg', 'Baby'),
+                buildCircularBox('assets/img1.jpg', 'Checkup'),
+                buildCircularBox('assets/img1.jpg', 'Eye'),
+                buildCircularBox('assets/img1.jpg', 'Tooth'),
+              ],
+            ),
+
             SizedBox(
               height: 70,
               child: ListView.builder(
@@ -282,6 +311,26 @@ class DoctorList extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+
+  Widget buildCircularBox(String imagePath, String text) {
+    return Column(
+      children: [
+        ClipOval(
+          child: Image.asset(
+            imagePath,
+            width: 50.0,
+            height: 50.0,
+            fit: BoxFit.cover,
+          ),
+        ),
+        SizedBox(height: 8.0),
+        Text(
+          text,
+          textAlign: TextAlign.center,
+        ),
+      ],
     );
   }
 }

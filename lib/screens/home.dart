@@ -1,4 +1,3 @@
-import 'package:code/widgets/navbar_roots.dart';
 import 'package:flutter/material.dart';
 import 'doctors_list.dart';
 import 'Ambulance.dart';
@@ -16,8 +15,11 @@ class HomePage extends StatelessWidget {
         title: Row(
           children: [
             SizedBox(width: 8.0),
-            Text("Hello Team"),
-            SizedBox(width: 115.0),
+            Text(
+              "Our Services",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            SizedBox(width: 110.0),
             Icon(Icons.person),
           ],
         ),
@@ -88,29 +90,30 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: NavBarRoots(),
-      // items: [
-      //   // BottomNavigationBarItem(
-      //   //   icon: Icon(Icons.calendar_today),
-      //   //   label: 'Appointment',
-      //   // ),
-      //   // BottomNavigationBarItem(
-      //   //   icon: Icon(Icons.local_pharmacy),
-      //   //   label: 'Medicine',
-      //   // ),
-      //   // BottomNavigationBarItem(
-      //   //   icon: Icon(Icons.home),
-      //   //   label: 'Home',
-      //   // ),
-      //   // BottomNavigationBarItem(
-      //   //   icon: Icon(Icons.healing),
-      //   //   label: 'Health Checker',
-      //   // ),
-      //   // BottomNavigationBarItem(
-      //   //   icon: Icon(Icons.person),
-      //   //   label: 'Profile',
-      //   ),
-      // ],
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.calendar_today),
+            label: 'Appointment',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.local_pharmacy),
+            label: 'Medicine',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.healing),
+            label: 'Health Checker',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+          ),
+        ],
+      ),
     );
   }
 

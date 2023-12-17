@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:code/widgets/navbar_roots.dart';
 import 'home.dart';
+import 'signup.dart';
 
 class SignInPage extends StatefulWidget {
   const SignInPage({super.key});
@@ -56,7 +57,7 @@ class _SignInPageState extends State<SignInPage> {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (BuildContext context) {
-                      return const HomePage();
+                      return const NavBarRoots();
                     },
                   ),
                 );
@@ -76,6 +77,28 @@ class _SignInPageState extends State<SignInPage> {
                   borderRadius: BorderRadius.circular(24.0),
                 ),
                 minimumSize: Size(100, 50),
+              ),
+            ),
+            SizedBox(height: 20.0),
+            // if you don't have an account sing up
+            GestureDetector(
+              onTap: () {
+                //navigate to sign up
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (BuildContext context) {
+                      return SignUpPage();
+                    },
+                  ),
+                );
+              },
+              child: Text(
+                "If you don't have an account, Sign Up !",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ],

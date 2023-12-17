@@ -5,7 +5,7 @@ class MessagesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: NavBarRoots(),
+      // bottomNavigationBar: NavBarRoots(),
     );
   }
 }

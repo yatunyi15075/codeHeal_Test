@@ -1,4 +1,4 @@
-// import 'package:custom_clippers/custom_clippers.dart';
+import 'package:custom_clippers/custom_clippers.dart';
 import 'package:flutter/material.dart';
 
 class ChatSample extends StatelessWidget {
@@ -29,7 +29,7 @@ class ChatSample extends StatelessWidget {
           child: Padding(
             padding: EdgeInsets.only(top: 20, left: 80),
             child: ClipPath(
-              // clipper: LowerNipMessageClipper(MessageType.send),
+              clipper: LowerNipMessageClipper(MessageType.send),
               child: Container(
                 padding:
                     EdgeInsets.only(left: 20, top: 10, bottom: 25, right: 20),

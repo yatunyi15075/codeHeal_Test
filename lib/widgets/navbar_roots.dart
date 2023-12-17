@@ -5,6 +5,9 @@ import 'package:code/screens/appointment_screen.dart';
 import 'package:code/screens/settings.dart';
 import 'package:code/screens/messages_screen.dart';
 
+import '../screens/disease_checker.dart';
+import '../screens/doctors_list.dart';
+
 class NavBarRoots extends StatefulWidget {
   const NavBarRoots({super.key});
 
@@ -20,7 +23,9 @@ class _NavBarRootsState extends State<NavBarRoots> {
     // //msg screen
     MessagesScreen(),
     // //schedule/Book Apointment screen
-    AppointmentScreen(),
+    DoctorList(),
+    //Ai doctor/ health checker
+    DiseaseChecker(),
     // //settings screen
     MyProfileScreen(),
   ];
@@ -35,7 +40,7 @@ class _NavBarRootsState extends State<NavBarRoots> {
         child: BottomNavigationBar(
           backgroundColor: Colors.white,
           type: BottomNavigationBarType.fixed,
-          selectedItemColor: Color(0xFF7165D6),
+          selectedItemColor: Colors.blue,
           unselectedItemColor: Colors.black26,
           selectedLabelStyle: TextStyle(
             fontWeight: FontWeight.bold,
@@ -59,6 +64,10 @@ class _NavBarRootsState extends State<NavBarRoots> {
             BottomNavigationBarItem(
               icon: Icon(Icons.calendar_month),
               label: "Schedule",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.healing),
+              label: 'AI Doc',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.settings),
